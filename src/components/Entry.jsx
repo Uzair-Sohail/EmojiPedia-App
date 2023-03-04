@@ -1,15 +1,15 @@
 import React from "react";
 
-function Entry(props) {
+function Entry(emoji,name,description) {
   return (
     <div className="term">
       <dt>
         <span className="emoji" role="img" aria-label="Tense Biceps">
-          {props.emoji}
+          {emoji}
         </span>
-        <span>{props.name}</span>
+        <span>{name}</span>
       </dt>
-      <dd>{props.description}</dd>
+      <dd>{description}</dd>
     </div>
   );
 }
